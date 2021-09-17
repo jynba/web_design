@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?47tlmx');
+  src:  url('fonts/icomoon.eot?47tlmx#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?47tlmx') format('truetype'),
+    url('fonts/icomoon.woff?47tlmx') format('woff'),
+    url('fonts/icomoon.svg?47tlmx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-down:before {
+  content: "\e900";
+}
+.icon-chevron-left:before {
+  content: "\e901";
+}
+.icon-chevron-right:before {
+  content: "\e902";
+}
+.icon-chevron-up:before {
+  content: "\e903";
+}
+.icon-refresh-cw:before {
+  content: "\e904";
+}
+.icon-cart:before {
+  content: "\e905";
+}
+.icon-clock1:before {
+  content: "\e906";
+}
+.icon-film:before {
+  content: "\e913";
+}
+.icon-video-camera:before {
+  content: "\e914";
+}
+.icon-file-empty:before {
+  content: "\e924";
+}
+.icon-coin-yen:before {
+  content: "\e93e";
+}
+.icon-clock:before {
+  content: "\e94e";
+}
