@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?88t0q1');
+    src:  url('../fonts/icomoon.eot?88t0q1#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?88t0q1') format('truetype'),
+    url('../fonts/icomoon.woff?88t0q1') format('woff'),
+    url('../fonts/icomoon.svg?88t0q1#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.w {
+    width: 1316px;
+    margin: 0 auto;
+}
+.style_red {
+    color: #db1011;
+}
+/* 快捷导航栏制作 */
+.shortcut {
+    position: absolute;
+    width: 100%; 
+    height: 80px;
+    line-height: 60px;
+    background: #ffffff00;
+    /* color: #fff; */
+    z-index: 6;
+}
+.shortcut .f1 {
+    float: left;
+}
+.shortcut .f2 {
+    float: right;
+    margin-right: 100px;
+}
+.shortcut .f1 li {
+    float: left;
+    margin: 20px 15px;
+}
+.shortcut a {
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #ffffff;   
+}
+.shortcut .f2 li{
+    float: right;
+    margin: 20px 15px;
+    /* color: rgb(255, 255, 255); */
+    font-family: 'icomoon';
+}
+.shortcut .f1 ul li a:hover {
+    color: #db1011;
+    border-bottom: 2px solid #db1011;
+}
+.shortcut .f1 ul li:first-of-type a:hover
+{
+    border-bottom: 0px;
+}
+.shortcut .f2 ul .style_red {
+    color: #db1011;
+}
+.shortcut .f2 .iconpos{
+	 position: absolute;
+	 right:220px;
+	 top:20px;
+   /*float: right;*/
+   width:50px;
+   background:url(../imgages/音乐.png);
+   background-size:100% 100%;
+   display: block;
+   height: 42px;
+   z-index:100;
+}
+@-webkit-keyframes rotatae{
+    0%{
+	   transform:rotate(0deg);
+    }
+   100%{
+	 transform:rotate(360deg);
+   }
+}
+/*调用*/
+/*音乐*/
+.run{
+    -webkit-animation-name:rotatae;
+    -webkit-animation-duration:2s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-iteration-count:infinite;
+}
+.bowshadow {
+    box-shadow:0px 2px 14px 0px rgba(100,104,108,0.16);
+}
+/* 尾部模块制作 */
+/* 尾部模块制作 */
+.footer {
+    padding-bottom: 20px;
+    border-top: 1px #000 solid;
+    color: #fff;
+    background-color:  rgb(107, 107, 107);
+    /* 解决塌陷问题 */
+    overflow: hidden;
+}
+.mod_help {
+    padding-left: 50px;
+    border-bottom: 1px solid #ededed;
+}
+.mod_copyright {
+    padding-top: 17px;
+    text-align: center;
+}
+.mod_service2  {
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.copyright  {
+    width: 724px;
+    padding-top: 10px;
+    margin: 0px auto;
+}
+.copyright p{
+    line-height: 20px;
+}

@@ -1,0 +1,736 @@
+body{
+    background-color: #fff;
+}
+/* 视频轮播图 */
+.videos {
+    position: relative;
+    height: 742px;
+}
+.videos_left {
+    position: relative;
+    width: 1500px;
+    height: 742px;
+    left: 50%;
+    margin-left: -750px;
+    overflow: hidden;
+}
+.videos_left ul{
+    position: absolute;
+    width: 16500px;
+}
+.videos_left ul li {
+    float: left;
+    width: 1500px;
+    height: 742px;
+}
+.videos_left img {
+    width: 1500px;
+    height: 742px;
+}
+.arrow_vl,
+.arrow_vr {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 30px;
+    height: 60px;
+    background: rgba(0,0,0,.3);
+    font: 20px 'icomoon';
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 60px;
+    content: '\e901';
+    z-index: 2;
+}
+.arrow_vl {
+    left: 0px;
+    border-radius: 0 30px 30px 0;
+}
+.arrow_vr {
+    right: 0px;
+    border-radius: 30px 0 0 30px;
+}
+.arrow_vr 
+.arrow_vl:hover{
+    color: #c81623;
+}
+.videos_right {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    width: 220px;
+    height: 360px;
+    padding-top: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    z-index: 4;
+}
+.videos_right a{
+    color: #fff;
+}
+.videos_right li {
+    width: 200px;
+    height: 35px;
+    margin-left: 10px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    cursor: default;
+}
+.videos_right li:hover {
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.videos_right .big {
+    font-size: 18px;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0);
+}
+.down {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    margin-left: -76px;
+    color: #fff;
+    font-size: 16px;
+    cursor:pointer;
+    font-family: Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+.down a {
+    color: #fff;
+}
+.down a:hover {
+    color: #c81623;
+}
+.down::after{
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    margin-left: -10px;
+    width: 30px;
+    height: 60px;
+    border-radius: 0 30px 30px 0;
+    font: 20px 'icomoon';
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 60px;
+    content: '\e900';
+    z-index: 7;
+    animation: move 2s linear infinite;
+}
+
+
+/* 革命人物模块制作 */
+.people {
+    position: relative;
+    overflow: hidden;
+    padding-top: 20px;
+    width: 1500px;
+    margin: 0 auto;
+    /* height: 750px; */
+    /* box-shadow:  0 15px 30px  rgba(0, 0, 0, .2);  */
+}
+.H-title {
+    margin-top: 40px;
+    display: block;
+    font-size: 1.5em;
+    /* margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+    width: 100%;
+    text-align: center;
+    height: 63px;
+    position: relative;
+    font-size: 38px;
+    color: #0D1A26;
+    line-height: 53px;
+    font-family: Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-weight: 500;
+}
+.info {
+    display: block;
+    /* margin-block-start: 1em; */
+    /* margin-block-end: 1em; */
+    /* margin-inline-start: 0px; */
+    /* margin-inline-end: 0px; */
+    color: #4e4e4e;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.people ul{
+    /* height: 279px; */
+    /* width: 1287px; */
+    margin-top: 140px;
+    margin: 0 auto;
+}
+.one {
+    margin: 0 auto;
+    margin-top: 87px;
+    position: relative;
+} 
+.people li {
+    position: relative;
+    /* float: left; */
+    width: 194px;
+    height: 279px;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.395), 0 0 20px 0 rgba(0, 0, 0, 0.375);
+    transition: all 0.5s;
+}
+@media screen and (max-width:767px)
+{
+    .people li{
+        width: 145.5px;
+        height: 209.25px;
+    }
+    .people li img {
+        width: 100%;
+        height: 100%;
+    }
+    .box .peo .flag_1 {
+        height: 35px;
+        left: 0px;
+        bottom: 0px;
+    }
+    .peo .flag_1 h3 {
+        text-align: center;
+        line-height: 0px;
+        font-size: 14px;
+        height: 20px;
+    }
+    .H-title {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:450px)
+{
+    .people li{
+        width: 97px;
+        height: 139px;
+    }
+    .people li img {
+        width: 100%;
+        height: 100%;
+    }
+    .box .peo .flag_1 {
+        height: 35px;
+        left: 0px;
+        bottom: 0px;
+    }
+    .peo .flag_1 h3 {
+        text-align: center;
+        line-height: 0px;
+        font-size: 12px;
+        height: 28px;
+    }
+    .H-title {
+        margin-top: 5px;
+        font-size: 20px!important;
+    }
+    .info {
+        font-size: 15px!important;
+    }
+}
+.people li img {
+	position: relative;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+.people li img:hover{
+    transform: scale(1.2);
+    /* animation: bigger 1s linear 1; */
+}
+.people .flag_1 {
+	position: absolute;
+	left: 0px;
+	bottom: -140px;
+	width: 100%;
+	height: 200px;
+    text-indent: 2em; 
+	text-align: center;
+	color: #FFFFFF;
+	background:rgba(0,0,0,0.5);
+    transition: all 1s;
+}
+
+.lie {
+    padding: 20px auto;
+}
+.flag_1 h3{
+    text-indent: 0em; 
+    text-align: center;
+    line-height: 28px;
+	height: 60px;
+}
+.people .flag_1:hover {
+	bottom: 0px;
+} 
+.more {
+    position: relative;
+    height: 100px;
+    margin-top: 43px;
+}
+.more a{
+    color: #000;
+    font: 18px 'icomoon';
+    text-align: center;
+    line-height: 40px;
+    font-family: Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+.more a:hover{
+    color: #c81623;
+}
+.more span {
+    position: absolute;
+    display: block;
+    width: 170px;
+    height: 40px;
+    right: 60px;
+    font: 18px 'icomoon';
+    line-height: 40px;
+    /* margin: 20px auto; */
+    border-radius: 50px;
+    transition: box-shadow 0.5s;
+    animation: move_1 2s linear infinite;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.395), 0 0 10px 0 rgba(0, 0, 0, 0.375);
+}
+.more span:hover {
+    animation: move_1 0s;
+}
+
+.down_1 {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    margin-left: -76px;
+    color: #000;
+    font-size: 20px;
+    cursor:pointer;
+}
+.down_1 a:hover {
+    color: #c81623;
+}
+.down_1::after{
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    margin-left: -10px;
+    width: 30px;
+    height: 60px;
+    border-radius: 0 30px 30px 0;
+    font: 20px 'icomoon';
+    color: #000;
+    font-weight: 700;
+    line-height: 60px;
+    content: '\e900';
+    z-index: 7;
+    animation: move 2s linear infinite;
+}
+/* 图书角轮播图模块制作 */
+
+.and {
+    width: 100px;
+    height: 40px;
+    margin: 10px auto;
+    margin-top: 340px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+    border: #c81623 1px solid;
+    border-radius: 50px;
+}
+.and a {
+    color: #c81623;
+}
+.and:hover {
+    background-color: #c816221a;
+}
+/* 著作轮播 */
+.swiper-container_1 {
+    position: relative;
+    width: 1200px;
+    height: auto;
+    padding: 90px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-wrappe_1 {
+    width: 800px;
+    margin: 0 auto;
+}
+.swiper-wrappe_1 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    height: 200px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transition-property: all;
+}
+#progressEffect {
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    left: 20px;
+}
+.move_1 {
+    width: 200px;
+    height: 300px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.move_1 img:hover {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.103);
+}
+.move_1 img {
+    display: block;
+    float: left;
+    width: 150px;
+    height: 203.75px;
+    margin: 20px 25px;
+    border-radius: 5px;
+}
+.move_1 span {
+    display: block;
+    font-size: 12px;
+    color: #000;
+    text-align: center;
+}
+.banner {
+    bottom: 0px!important;
+}
+/* 鼠标经过放大模块 */
+.main_1{
+	width: 600px;
+	height: 280px;
+	margin: 150px auto;
+	overflow: hidden;
+    border-radius: 15px;
+	border:2px solid rgb(247, 237, 228);
+}
+
+.main_1 img {
+    width: 520px;
+    height: 280px;
+}
+.main_1 li{
+	position: relative;
+	width: 140px;
+	float: left;
+	border-left: 1px solid #FFFFFF;
+	transition: all 2s;
+}
+.main_1 li:last-of-type {
+	width: 175px;
+}
+.flag{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	color: #FFFFFF;
+	background:rgba(0,0,0,0.5);
+}
+.main_1:hover li{
+	width: 30px;
+}
+.main_1 li:hover{
+	width: 500px;
+}
+
+@keyframes move {
+    0% {bottom: -50px;}
+    50%{bottom: -53px; display: none;}
+    100%{bottom: -50px;}
+}
+
+@keyframes bigger{
+    0% {width: 100%;}
+    100%{width: 120%}
+}
+
+@keyframes move_1 {
+    0% {right: 55px;}
+    50%{right: 50px;}
+    100%{right: 55px;}
+}
+
+/* 地图地标模块制作 */
+#main {
+    top: -107px;
+    margin-bottom: -120px;
+}
+.person
+{
+    padding-top:20px;
+    height: 800px;
+    background-color: rgba(221, 221, 221, 0.191);
+}
+.check{
+    margin: 40px auto;
+}
+.maps {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 40px;
+    /* background: url("../imgages/background_zg.jfif"); */
+}
+.maps_main {
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.pre {
+    padding-top: 10px;
+    margin-top: -12px;
+}
+/* 党员信息模块制作 */
+.dangyuan {
+    overflow: hidden;
+    margin: 0 auto;
+    background: url("../imgages/bj_1.png") no-repeat 50% -258px;
+}
+.left_m {
+    float: left;
+    margin: 0 109px;
+    margin-top: 63px;
+}
+.right_m {
+    float: left;
+    margin-top: 63px;
+
+}
+/* 百年印记2.0制作 */
+.times_2 {
+    width: 100%;
+    padding-top: 20px; 
+    background-color: rgba(221, 221, 221, 0.191);
+}
+.times .slide {
+    
+    margin-top: 20px;
+}
+.solids {
+    margin: 0px auto;
+    padding-bottom: 10px;
+    width: 5px;
+    background-color: dimgrey;
+}
+.solids li {
+    position: relative;
+}
+.year {
+    position: relative;
+    top: 20px;
+    left: -42px;
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    font-family: Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    color: #fff;
+    background-color: dimgrey;
+}
+.solids img {
+    margin-top: 40px;
+    margin-left: -98px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: dimgrey 5px solid;
+    box-shadow:  0 0 4px 0 rgba(0, 0, 0, 0.463), 0 0 10px 0 rgba(0, 0, 0, 0.422);
+    transform: scale(1);
+    transition: all 1s;
+}
+.right_s {
+    position: relative;
+    width: 800px;
+    margin-top: 70px;
+}
+.right_s span {
+    position: absolute;
+    top: 125px;
+    right: 175px;
+    width: 500px;
+    /* height: 100px; */
+    background-color: dimgrey;
+}
+.right_s p {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    font-size: 18px;
+    font-family: Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    color: #fff;
+}
+.right_s em {
+    display: inline-block;
+    position:absolute;
+    width: 0px;
+    height: 0px;
+    top: 50%;
+    left: -20px;
+    margin-top: -10px;
+    border: 10px solid transparent;
+    border-right: 10px solid dimgrey;
+    z-index: 10;
+}
+.left_s {
+    position: relative;
+    width: 800px;
+    margin-top: 70px;
+}
+.left_s span {
+    position: absolute;
+    top: 131px;
+    left: -624px;
+    width: 500px;
+    /* height: 100px; */
+    background-color: dimgrey;
+}
+.left_s p {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 15px;
+    font-size: 18px;
+    font-family: Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    color: #fff;
+}
+.left_s em {
+    display: inline-block;
+    position:absolute;
+    width: 0px;
+    height: 0px;
+    top: 50%;
+    right: -20px;
+    margin-top: -10px;
+    border: 10px solid transparent;
+    border-left: 10px solid dimgrey;
+    z-index: 10;
+}
+.goback {
+    display: none;
+    position: fixed;
+    top: 90%;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow:  0 0 4px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.103);
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+    font-family: 'icomoon';
+    font-size: 20px;
+    cursor:pointer;
+}
+.goback:hover {
+    color: #c81623;
+}
+
+/* 党章 */
+.regula {
+    position: relative;
+    width: 1200px;
+    height: 460px;
+    margin: 110px auto;
+    background-color: #db1011;
+}
+.rule {
+    position: absolute;
+    top: -60px;
+    left: 5%;
+    margin-left: -350px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.rule ul {
+    margin: 50px 0;
+}
+.rule ul li {
+    margin: 25px 0;
+    cursor:pointer;
+}
+.rule .r_left
+{
+    margin-left: 40px;
+    margin-right: 160px;
+    float: left;
+}
+.rule .r_right
+{
+    margin-right: 40px;
+    right: 6%;
+    float: right;
+}
+.rule ul li:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+.on{
+    display: none;
+    position: absolute;
+    left: 246px;
+    top: 0;
+    width: 720px;
+    height: 1000px;
+    background-color: #fff;
+    border: #db1011 3px solid;
+    border-radius: 15px;
+}
+.on>span {
+    display: block;
+    width: 50px;
+    height: 50px;
+    right: -670px;
+    top: -26px;
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 45px;
+    border: #db1011 3px solid;
+    border-radius: 50px;
+    color: #db1011;
+    background-color: #fff;
+    cursor:pointer;
+}
+.swiper-container_4 {
+    width: 680px;
+    height: 100%;
+}
+
+.swiper-wrapper_4 .swiper-slide {
+    font-size: 14px;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 30px;
+    }

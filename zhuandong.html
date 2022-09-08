@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,3 +82,88 @@
            */
    </script>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>animation</title>
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <style>
+       *{padding:0;margin:0;}
+/*定义*/
+       @-webkit-keyframes rotatae{
+           0%{
+               transform:rotate(0deg);
+           }
+           100%{
+               transform:rotate(360deg);
+           }
+       }
+       /*调用*/
+	   .iconpos{
+		   width:50px;
+           height:50px;
+           background:url(imgages/音乐.png);
+           background-size:100% 100%;
+		   position:fixed;
+           right:10px;
+           top:10px;
+	   }
+       .run{
+           -webkit-animation-name:rotatae;
+           -webkit-animation-duration:2s;
+           -webkit-animation-timing-function:linear;
+           -webkit-animation-iteration-count:infinite;
+       }
+    </style>
+</head>
+<body>
+   <div id="icon" class="iconpos">
+   <!-- autoplay 自动播放 loop 循环播放 controls 控件 -->
+   <audio id="music" src="../music/陈楚生 - 那个远方.mp3" loop autoplay></audio></div>
+</body>
+   <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+   <script>
+	window.onload = function(){
+		 var audio = document.getElementById('music');
+			 audio.pause();//打开页面时无音乐
+	}
+	   var icon=document.getElementById('icon');
+       var flag=true;
+	   var audio = document.getElementById('music');
+	   //点击图标停止转动，再次点击开始转动
+       $("#icon").click(function(){ 
+           if(!flag){
+			   icon.classList.add('run');
+               $(this).css({"-webkit-animation-play-state":"paused"});
+			   
+               //音乐停止
+               audio.pause();
+               flag=true;
+           }else{
+			   icon.classList.add('run');
+               $(this).css({"-webkit-animation-play-state":"running"});
+               //音乐播放
+               audio.play();
+               flag=false;
+           }
+       })
+
+       	/*项目中运用到写法
+           $(".music").click(function(){
+               var music = document.getElementById("video");
+               if(music.paused){
+                   music.play();
+                   $(this).removeClass("off");
+                   $(this).css({"-webkit-animation-play-state":"running"});
+               }else{
+                   music.pause();
+                   $(this).addClass("off");
+                   $(this).css({"-webkit-animation-play-state":"paused"});
+               }
+           });
+           */
+   </script>
+</html>
+>>>>>>> 61a8081 (first)
